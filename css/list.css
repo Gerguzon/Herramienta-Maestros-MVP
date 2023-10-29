@@ -1,0 +1,62 @@
+main .list-container {
+    inline-size: 21.5rem ;
+    
+}
+
+.list-container .list-activities {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    margin-block-end: 1rem;
+}
+
+.list-container .list-activities .activity-description {
+    margin-inline-end: 5rem;
+}
+
+.list-container .list-activities .list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    block-size: 3rem;
+    /* border: 1px red solid; */
+    background-color: var(--grey-300);
+    border-radius: 1rem;
+}
+
+.list-item picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline-end: 1rem;
+}
+
+.list-item .activity-description h3 {
+    margin: 0;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;   
+}
+
+.list-item .activity-description  p {
+    margin: 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.list-item .activity-score {
+    inline-size: 2rem;
+    block-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green-good);
+    border-radius: 4px;
+    font-weight: 700;
+    justify-self: end;
+    margin-inline-end: .5rem;
+}
+
+
+
