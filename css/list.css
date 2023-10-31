@@ -1,5 +1,7 @@
 main .list-container {
     inline-size: 21.5rem ;
+    margin-bottom: 4rem;
+    position: relative;
     
 }
 
@@ -14,6 +16,50 @@ main .list-container {
     margin-inline-end: 5rem;
 }
 
+/* title */
+
+
+.title-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.title-list h2 {
+    margin-inline-start: .5rem;
+}
+
+.title-list .add-activity {
+    block-size: 2rem;
+    inline-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    border: 0;
+    background-image: url("../assets/plus-activity.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline-end: .7rem;
+    
+}
+
+.title-list .add-activity:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.title-list .add-activity:active {
+    transform: scale(.8);
+}
+
+
+
+
+
+
+
+
 .list-container .list-activities .list-item {
     display: flex;
     align-items: center;
@@ -24,12 +70,37 @@ main .list-container {
     border-radius: 1rem;
 }
 
-.list-item picture {
+.list-item .delete-activity {
+    block-size: 2rem;
+    inline-size: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--grey-300);
+    border: 0;
+    background-image: url("../assets/delete-activity.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-inline-end: .7rem;
+    
+}
+
+.list-item .delete-activity:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}
+
+.list-item .delete-activity:active{
+    transform: scale(.8);
+}
+
+
+/* .list-item picture {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-inline-end: 1rem;
-}
+} */
 
 .list-item .activity-description h3 {
     margin: 0;
@@ -58,5 +129,31 @@ main .list-container {
     margin-inline-end: .5rem;
 }
 
+/* botton */
+
+.score-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 29%;
+    inline-size: 10rem;
+    block-size: 2.87rem;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 1rem;
+    
+}
 
 
+.score-button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.score-button:active {
+    transform: scale(.8);
+} 

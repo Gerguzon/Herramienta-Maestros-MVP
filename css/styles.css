@@ -8,6 +8,7 @@
     --grey-300: #F4F7FE;
     --grey-600: #A3AED0;
     --green-good: #05CD99;
+    --purple:#4318FF; 
 
 }
 
@@ -36,6 +37,7 @@ main {
     align-items: center;
     row-gap: 2.5rem;
     border-radius: 0px 0px 20px 20px ;
+
     
 }
 
